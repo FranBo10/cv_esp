@@ -58,7 +58,7 @@ ul {
 }
 
 .photo {
-    background-image: url(../img/perfilcv.png);
+    background-image: url(./img/perfilcv.png);
     max-width: 70%;
     margin: 0px auto;
     background-color: teal;
