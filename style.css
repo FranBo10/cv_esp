@@ -41,8 +41,8 @@ ul {
 .container .margin {
     position: relative;
     background-color: #003147;
-    padding: 20px 10px;
-    width: 230px;
+    padding: 20px 6px;
+    width: 200px;
     margin-bottom: 6px;
 }
 
@@ -58,7 +58,7 @@ ul {
 }
 
 .photo {
-    background-image: url(./img/perfilcv.png);
+    background-image: url('./img/perfilcv.png');
     max-width: 70%;
     margin: 0px auto;
     background-color: teal;
@@ -113,7 +113,7 @@ ul {
 
 .contact ul li span  {
     color: #efefef;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
 }
 
@@ -131,14 +131,10 @@ ul {
 
 }
 
-.contact.education h5 {
-    color: #03a9f4;
-
-}
-
-.contact.education h5:nth-child(2) {
+.contact.education h6 {
     color: #efefef;
     font-weight: 500;
+    font-size: 12px;
     
 }
 
@@ -174,9 +170,8 @@ ul {
 }
 
 .interests-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; 
+    display: flex;
+    flex-direction: column;
   }
   
   .interest .interest-item {
@@ -211,10 +206,10 @@ ul {
 
   .competence-container>ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2px;
     list-style: square;
-    padding: 0px 20px;
+    padding: 0px 20px 10px;
   }
 
   .competence-container ul li::marker {
@@ -224,7 +219,7 @@ ul {
 .container .principal {
     position: relative;
     background-color: #efefef;
-    padding: 17px 10px;
+    padding: 15px 15px;
 }
 
 .title2 {
@@ -240,7 +235,7 @@ p {
 }
 
 .about {
-    padding: 0px 10px;
+    padding: 0px 5px;
 
 }
 
@@ -250,7 +245,7 @@ p {
 
 .about ul{
     list-style: square;
-    padding: 10px;
+    padding: 1px;
 }
 
 .about ul li::marker {
@@ -258,7 +253,7 @@ p {
 }
 
 .about .title2 {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     color: #2a7da2;
 }
 
@@ -268,12 +263,12 @@ p {
 }
 
 .about .box ul {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 
 .about .box li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-weight: lighter;
 }
 
@@ -297,7 +292,11 @@ p {
 .about .box .text h6 {
     text-transform: uppercase;
     color: #2a7da2;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.about .box .text ul li {
+    font-size: 0.85rem;
 }
 
 .skills {
@@ -316,7 +315,7 @@ p {
     align-items: center;
 }
 
-.skills .box h5 {
+.skills .box h6 {
     text-transform: uppercase;
     color: #848c99;
     font-weight: 500;
@@ -335,6 +334,10 @@ p {
     left: 0;
     height: 100%;
     background: #2a7da2;
+}
+
+.competence-container ul li {
+    font-size: 0.85rem;
 }
   /* .competence .competence-list {
     display: grid;
